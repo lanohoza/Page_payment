@@ -1,0 +1,48 @@
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+      <div mat-card-avatar class="vir-header-image"></div>
+      <mat-card-title >Virement bancaire</mat-card-title>
+      <mat-card-subtitle >Compte à Compte</mat-card-subtitle>
+    </mat-card-header>
+   
+    <mat-card-content>
+      
+      <h2>
+        Nom de vendeur:
+        
+      </h2>
+      <hr>
+     
+       <div style="padding:5%;">    
+         <div class="item">
+          <label style="display: inline;">Numero de compte<span>*</span></label>
+          <input  type="text"   
+                  name="Numero de la carte"
+                  maxlength="19"
+                  (keypress)="OnlyNumberAllow($event)" style="width: 50%;" required/>
+                  
+        </div> 
+        <div class="item">
+          <label>Adresse<span>*</span></label>
+          <input  type="text"   
+                  style="width: 50%;"
+                   required/>
+                  
+        </div> 
+         <hr>
+         
+         <div class="item">
+            <label style="display: inline;">Reçu de Virement:<span>*</span>
+            
+            <div class="container">
+              <input type="file" class="upload-box"/>
+           </div>
+          </label>
+        </div>
+        
+        </div>
+      
+   
+    </mat-card-content>
+    
+  </mat-card>

@@ -1,0 +1,67 @@
+
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+      <mat-card-title style="font-size: x-large;">Informations personnelle</mat-card-title>
+      
+    </mat-card-header>
+   <br>
+    <mat-card-content>
+      
+      
+       <div style="padding:5%;box-shadow: 0 0 8px #006622;">
+         <div class="item">
+          <label>Nom</label>
+          <input  type="text"   
+                  value=""
+                  name="nom"
+                  id="nom"
+                  disabled
+                  style="width: 50%;"
+                  required/>
+                 
+        </div> 
+        <div class="item">
+          <label>Prenom</label>
+          <input  type="text"   
+                  value=""
+                  name="prenom"
+                  id="prenom"
+                  style="width: 50%;"
+                  disabled
+                  required/>
+                 
+        </div> 
+         <hr>
+         <div class="item">
+          <label>Email</label>
+          <input  type="email" 
+          style="width: 50%;"  
+                  value=""
+                  name="email"
+                  id="email"
+                  disabled
+                  required/>
+                  
+        </div> 
+        <hr>
+        
+        <div class="item">
+          <label>Téléphone</label>
+          <input  type="text"   
+                  value=""
+                  name="telephone"
+                  required
+                  id="tel"
+                 
+                  disabled
+                  >
+                 
+        </div> 
+      </div>
+          
+    </mat-card-content>
+    <mat-card-actions >
+      <button class="modifier" mat-stroked-button (click)='modify()'>Modifier</button>
+
+       </mat-card-actions>
+  </mat-card>

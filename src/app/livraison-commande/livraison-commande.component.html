@@ -1,0 +1,57 @@
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+        <mat-card-title >Autre informations:</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+    
+            <h2>les informations de votre livraison ({{option}})</h2>
+            <div *ngIf="option=='Laivraison à domicile'" style="padding-left:10%;">
+              <h3><li>Wilaya:  </li></h3>
+              <h3><li>Commune: </li></h3>
+              <h3><li>Code postal:  </li></h3>
+              <h3><li>Numero et rue:  </li></h3>
+              <h3><li>Téléphone:  </li></h3>
+              <h3><li>Email:</li></h3>
+              <h3><li>Link GPS:  <a href=""></a></li></h3>
+            </div>
+                  
+          
+    
+    <div *ngIf="option=='Point de livraison'" style="padding-left:10% ;">
+      <h3><li>Point de livraison:</li></h3>
+      <h3><li>Téléphone:</li> </h3>
+      <h3><li>Email:</li></h3>
+      <h3><li>Link GPS:  <a href=""></a></li></h3>
+    </div>
+
+    <div *ngIf="option=='Point de livraison chez le vendeur'" style="padding-left:10% ;">
+      <h3><li>Point de livraison: </li></h3>
+      <h3><li>Téléphone:</li></h3>
+      <h3><li>Email:</li></h3>
+      <h3><li>Link GPS:  <a href=""></a></li></h3>
+      <h3><li>Délait de livraison:</li></h3>
+      <h3><li>Frais de transport:</li></h3>
+    </div>
+  
+
+  <hr>
+  <div >
+    <h2>Votre commande</h2>
+    <div style="padding-left: 10% ;">
+
+      <h3><li>N° Commande: </li></h3>
+      <label><li>Prix total:</li></label>
+      <br>
+      <br>
+    <label><li>Prix(avec TVA):</li></label>
+      <br>
+      <br>
+    <label><li>Prix total TTC:</li></label>
+        
+    </div>   
+  </div>
+
+
+</mat-card-content>
+
+</mat-card>
